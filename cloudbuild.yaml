@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/bux-challenge/what-time-is-it:latest', '.']
+    args: ['build', '-t', 'europe-west4-docker.pkg.dev/bux-challenge/what-time-is-it:latest', '.']
   
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/bux-challenge/what-time-is-it:latest']
+    args: ['push', 'europe-west4-docker.pkg.dev/bux-challenge/what-time-is-it:latest']
 
 options:
   logging: CLOUD_LOGGING_ONLY
